@@ -34,7 +34,8 @@ module.exports = {
                 collaspable:false,
                 children:[
                     {title:'第一章', path:'/driver-note/chapter01'},
-                    {title:'第二章', path:'/driver-note/chapter02'}
+                    {title:'第二章', path:'/driver-note/chapter02'},
+                    {title:'第三章', path:'/driver-note/chapter03'}
                 ]
             }
         ],
