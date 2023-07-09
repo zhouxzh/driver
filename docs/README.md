@@ -1,4 +1,4 @@
-# 碳化硅驱动电路教程
+# [碳化硅驱动电路教程](https://zhouxzh.github.io/driver/)
 
 本教程由zhouxzh、DarentTheYang、DNFfafa联袂编写。
 
