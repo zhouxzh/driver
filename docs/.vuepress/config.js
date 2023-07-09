@@ -2,8 +2,8 @@ module.exports = {
     title: '第一个网页的标题',
     description: '第一个网页的说明',
     theme:'reco',
-    base:'/backend-blog/',
-    locals:{
+    base:'/driver/',
+    locales:{
         '/':{
             lang:'zh-CN'
         }
@@ -11,10 +11,11 @@ module.exports = {
     themeConfig:{
         nav:[
             {text:'首页', link:'/'},
-            {text:'作者链接',
+            {text:'作者Github',
                 items:[
-                    {text:'作者Github', link:'https://github.com/DarentTheYang'},
-                    {text:'作者Gitee', link:'https://gitee.com/litchivon'}
+                    {text:'zhouxzh', link:'https://github.com/zhouxzh'},
+                    {text:'DarentTheYang', link:'https://github.com/DarentTheYang'},
+                    {text:'DNFfafa', link:'https://github.com/DNFfafa'}
                 ]
             }
         ],
@@ -29,11 +30,11 @@ module.exports = {
             },
             {
                 title:'基础学习',
-                path:'/backend-note/chapter01',
+                path:'/driver-note/chapter01',
                 collaspable:false,
                 children:[
-                    {title:'第一章', path:'/backend-note/chapter01'},
-                    {title:'第二章', path:'/backend-note/chapter02'}
+                    {title:'第一章', path:'/driver-note/chapter01'},
+                    {title:'第二章', path:'/driver-note/chapter02'}
                 ]
             }
         ],
