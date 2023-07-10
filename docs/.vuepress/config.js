@@ -41,5 +41,16 @@ module.exports = {
             },
         ],
         subSidebar:'auto'
-    }
+    },
+    plugins: [
+        [
+          'vuepress-plugin-mathjax',
+          {
+            target: 'svg',
+            macros: {
+              '*': '\\times',
+            },
+          },
+        ],
+      ],
 }
