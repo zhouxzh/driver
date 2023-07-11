@@ -1,7 +1,12 @@
 module.exports = {
-    title: '第一个网页的标题',
-    description: '第一个网页的说明',
+    title: '摸鱼科技工作室',
+    description: '摸鱼科技工作室网站',
     theme:'reco',
+    head:[
+        [
+            'link',{rel:'icon', href:'logo.png'}
+        ]
+    ],
     base:'/driver/',
     locales:{
         '/':{
@@ -9,6 +14,7 @@ module.exports = {
         }
     },
     themeConfig:{
+        logo: '/logo.png',
         nav:[
             {text:'首页', link:'/'},
             {text:'作者Github',
@@ -53,4 +59,5 @@ module.exports = {
           },
         ],
       ],
+    
 }
