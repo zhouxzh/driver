@@ -1,6 +1,6 @@
 {
-  "name": "vuepress-theme-hope-template",
-  "description": "A project of vuepress-theme-hope",
+  "name": "driver",
+  "description": "A project of driver circuit",
   "version": "2.0.0",
   "license": "MIT",
   "type": "module",
@@ -12,16 +12,10 @@
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.19",
-    "katex": "^0.16.21",
-    "sass-embedded": "^1.83.4",
+    "sass-embedded": "^1.83.0",
     "vue": "^3.5.13",
     "vuepress": "2.0.0-rc.19",
     "vuepress-theme-hope": "2.0.0-rc.71"
   },
-  "packageManager": "pnpm@10.2.0+sha512.0d27364e0139c6aadeed65ada153135e0ca96c8da42123bd50047f961339dc7a758fc2e944b428f52be570d1bd3372455c1c65fa2e7aa0bfbf931190f9552001",
-  "pnpm": {
-    "ignoredBuiltDependencies": [
-      "esbuild"
-    ]
-  }
+  "packageManager": "pnpm@10.2.0+sha512.0d27364e0139c6aadeed65ada153135e0ca96c8da42123bd50047f961339dc7a758fc2e944b428f52be570d1bd3372455c1c65fa2e7aa0bfbf931190f9552001"
 }

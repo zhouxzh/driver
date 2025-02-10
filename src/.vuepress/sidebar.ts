@@ -3,24 +3,19 @@ import { sidebar } from "vuepress-theme-hope";
 export default sidebar({
   "/": [
     "",
+    "portfolio",
     {
-      text: "书籍章节",
+      text: "案例",
+      icon: "laptop-code",
+      prefix: "demo/",
+      link: "demo/",
+      children: "structure",
+    },
+    {
+      text: "文档",
       icon: "book",
-      prefix: "/book/",
-      collapsible: true,
-      children: [
-        "chapter01.md",
-        "chapter02.md",
-        "chapter03.md",
-        "chapter04.md",
-        "chapter05.md", 
-        "chapter06.md",
-        "chapter07.md",
-        "chapter08.md",
-        "chapter09.md",
-        "chapter10.md",
-        "chapter11.md"
-      ]
+      prefix: "guide/",
+      children: "structure",
     },
     {
       text: "幻灯片",
