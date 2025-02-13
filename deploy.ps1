@@ -2,10 +2,10 @@
 $ErrorActionPreference = "Stop"
 
 # 生成静态文件
-npm run docs:build
+pnpm docs:build
 
 # 进入生成的文件夹
-Set-Location -Path "docs/.vuepress/dist"
+Set-Location -Path "src/.vuepress/dist"
 
 # 初始化 Git 仓库
 git init
