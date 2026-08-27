@@ -1,7 +1,7 @@
 ---
 title: 绪论
 author: 周贤中
-date: '2023-07-09'
+date: 2023-07-09
 # mathjax:
 #   presets: '\def\lr#1#2#3{\left#1#2\right#3}'
 --- 

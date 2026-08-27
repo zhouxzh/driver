@@ -4,16 +4,16 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+  hostname: "https://zhouxzh.github.io/driver/",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "周贤中",
+    url: "https://github.com/zhouxzh",
   },
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "/driver/logo.png",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "zhouxzh/driver",
 
   docsDir: "src",
 
@@ -24,18 +24,8 @@ export default hopeTheme({
   sidebar,
 
   // 页脚
-  footer: "默认页脚",
+  footer: "驱动电路 | MIT 协议, 版权所有 © 周贤中",
   displayFooter: true,
-
-  // 加密配置
-  encrypt: {
-    config: {
-      "/demo/encrypt.html": {
-        hint: "Password: 1234",
-        password: "1234",
-      },
-    },
-  },
 
   // 多语言配置
   metaLocales: {

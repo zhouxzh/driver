@@ -5,9 +5,9 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "docs:build": "vuepress-vite build src",
-    "docs:clean-dev": "vuepress-vite dev src --clean-cache",
-    "docs:dev": "vuepress-vite dev src",
+    "docs:build": "node scripts/build.mjs",
+    "docs:clean-dev": "node scripts/dev.mjs --clean-cache",
+    "docs:dev": "node scripts/dev.mjs",
     "docs:update-package": "pnpm dlx vp-update"
   },
   "devDependencies": {

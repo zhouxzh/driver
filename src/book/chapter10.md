@@ -1,19 +1,20 @@
 ---
 title: 第10章 逆变器设计
 author: 周贤中
-date: '2023-07-29'
+date: 2023-07-29
 # mathjax:
 #   presets: '\def\lr#1#2#3{\left#1#2\right#3}'
 ---
 
 
-## 时间
+## 概述
 
+逆变器设计需要在拓扑、开关器件、驱动电路、磁性元件、散热与 EMI 之间进行系统权衡。SiC 与 GaN 器件的高速开关能力允许提高开关频率，从而缩小变压器、电感和滤波器体积，但频率升高也带来磁性元件损耗、寄生参数和驱动设计的挑战。本章重点介绍逆变器中高频变压器与电感的设计基础，以及 LLC 谐振变换器的磁性元件设计方法。
 
 ## 变压器与电感设计
 
 ### 高频变压器磁芯类型
-高频变压器是变换交流电压、电流和阻抗的器件，当初级线圈中通有交流电流时，铁芯（或磁芯）中便产生交流磁通，使次级线圈中感应出电压（或电流）。变压器由铁芯（或磁芯）和线圈组成，线圈有两个或两个以上的绕组，其中接电源的绕组叫初级线圈，其余的绕组叫次级线圈。变压器的磁芯包括罐型磁芯，RM型磁芯，E型磁芯，EC、ETD和EER型磁芯，PQ型磁芯，EP型磁芯，EP型磁芯，环形磁芯等磁芯，那么这些磁芯对变压器的工作有何影响呢？下面请看具体的分析。
+高频变压器是变换交流电压、电流和阻抗的器件，当初级线圈中通有交流电流时，铁芯（或磁芯）中便产生交流磁通，使次级线圈中感应出电压（或电流）。变压器由铁芯（或磁芯）和线圈组成，线圈有两个或两个以上的绕组，其中接电源的绕组叫初级线圈，其余的绕组叫次级线圈。变压器的磁芯包括罐型磁芯，RM型磁芯，E型磁芯，EC、ETD和EER型磁芯，PQ型磁芯，EP型磁芯，环形磁芯等磁芯，那么这些磁芯对变压器的工作有何影响呢？下面请看具体的分析。
 
 #### 罐型磁芯
 
@@ -199,7 +200,7 @@ LLC电源里面有一个谐振电感与谐振电容，但是很多时候见到�
 - Leakage inductance between a pair of winding must be calculated manually using: Maxwell 3D > Results > Output Variables
 - Leakage inductance must be referred to one set of terminals (pri, sec, tertiary, ...)
 - Two possible methods where N = turns ratio between winding pair: 
-#### Mehtod1. using coupling coefficient (easier)
+#### Method1. using coupling coefficient (easier)
 $L_{leakage12} = L_{11}(1-k_{12}^2)$
 #### Method2. using inductance matrix
 $L_{leakage12} = L_{11}-N(L_{12}+N_{21})+N^2L_{22}$ 
