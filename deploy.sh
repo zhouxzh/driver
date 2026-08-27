@@ -23,5 +23,6 @@ git init -q "$DIST_DIR"
 git -C "$DIST_DIR" add -A
 git -C "$DIST_DIR" -c user.name="zhouxzh" -c user.email="zhouxzh@gdut.edu.cn" commit -q -m "deploy"
 git -C "$DIST_DIR" push -f "$AUTH_REPO_URL" HEAD:deploy
+rm -rf "$DIST_DIR/.git"
 
 echo "Deployed to https://zhouxzh.github.io/driver/"

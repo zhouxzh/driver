@@ -1,2 +1,2 @@
-    import "E:/Github/driver/node_modules/.pnpm/@vuepress+plugin-markdown-e_e98f881b3d246865a03b5a77e9b2acf9/node_modules/@vuepress/plugin-markdown-ext/lib/client/styles/footnote.css"
-    import "E:/Github/driver/node_modules/.pnpm/@vuepress+plugin-markdown-e_e98f881b3d246865a03b5a77e9b2acf9/node_modules/@vuepress/plugin-markdown-ext/lib/client/styles/tasklist.css"
+    import "/home/zhong/Documents/driver/node_modules/.pnpm/@vuepress+plugin-markdown-ext@2.0.0-rc.74_markdown-it@14.1.0_vuepress@2.0.0-rc.19_@vuep_e98f881b3d246865a03b5a77e9b2acf9/node_modules/@vuepress/plugin-markdown-ext/lib/client/styles/footnote.css"
+    import "/home/zhong/Documents/driver/node_modules/.pnpm/@vuepress+plugin-markdown-ext@2.0.0-rc.74_markdown-it@14.1.0_vuepress@2.0.0-rc.19_@vuep_e98f881b3d246865a03b5a77e9b2acf9/node_modules/@vuepress/plugin-markdown-ext/lib/client/styles/tasklist.css"
