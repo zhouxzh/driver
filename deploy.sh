@@ -9,7 +9,13 @@ else
 fi
 DIST_DIR="src/.vuepress/dist"
 
-pnpm docs:build
+if command -v pnpm >/dev/null 2>&1; then
+  run_pnpm() { pnpm "$@"; }
+else
+  run_pnpm() { npx --yes pnpm@10.2.0 "$@"; }
+fi
+
+run_pnpm docs:build
 
 rm -rf "$DIST_DIR/.git"
 git init -q "$DIST_DIR"
