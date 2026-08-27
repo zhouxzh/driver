@@ -2,10 +2,11 @@
 set -euo pipefail
 
 REPO_URL="https://github.com/zhouxzh/driver.git"
+SSH_REPO_URL="git@github.com:zhouxzh/driver.git"
 if [ -n "${GH_TOKEN:-}" ]; then
   AUTH_REPO_URL="https://x-access-token:${GH_TOKEN}@github.com/zhouxzh/driver.git"
 else
-  AUTH_REPO_URL="$REPO_URL"
+  AUTH_REPO_URL="$SSH_REPO_URL"
 fi
 DIST_DIR="src/.vuepress/dist"
 
