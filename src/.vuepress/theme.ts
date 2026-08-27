@@ -4,7 +4,7 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://zhouxzh.github.io/driver/",
+  hostname: "https://zhouxzh.github.io",
 
   author: {
     name: "周贤中",
